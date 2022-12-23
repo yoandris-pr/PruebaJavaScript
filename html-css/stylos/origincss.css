@@ -1,0 +1,41 @@
+body {
+  margin: 0px;
+  background-color: rgb(170, 167, 167);
+}
+header {
+  background-color: rgb(197, 197, 193);
+  height: 150px;
+  width: auto;
+  text-align: center;
+}
+header h1 {
+  font-size: 4rem;
+}
+.container {
+  height: 150px;
+  width: auto;
+  border: 1px dotted blueviolet;
+}
+footer {
+  height: 100px;
+  width: auto;
+  border: 1px dotted chocolate;
+  background-color: rgb(124, 124, 123);
+  padding: 0.5rem;
+}
+footer p {
+  margin: 0rem;
+}
+footer section {
+  float: right;
+}
+footer a {
+  transition: font-size 4s 1s ease, color 4s 1s ease;
+  font-size: small;
+  text-decoration: none;
+  color: aqua;
+}
+footer a:hover {
+  color: rgb(243, 7, 7);
+  font-size: 15px;
+}

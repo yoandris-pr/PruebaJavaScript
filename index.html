@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      var listEstudiantes = ["Jhon", "Snow", 35];
+
+      //console.log(listEstudiantes);
+      listEstudiantes[0] = [48, 15];
+
+      listEstudiantes.push("idgrid");
+      console.log("Lista: \n" + JSON.stringify(listEstudiantes));
+      //alert(listEstudiantes);
+      console.log(listEstudiantes[3]);
+
+      function calcularAreaCirculo(radio) {
+        const PI = 3.14;
+        return radio <= 0 ? undefined : PI * radio ** 2;
+      }
+      const sumarX = (x) => x + 3;
+
+      const sumarXYZ = (...args) => args.reduce((a, b) => a + b, 0); //probando el reduce- Suma los elementos de un arreglo
+      /* const sumarXYZN = (...args) => {
+        return args.reduce((a, b) => a + b, 0);
+      };
+        console.log(sumarXYZ(2, 3, 4));
+      */
+      /* const num = [2, 3, 4];
+      function sumar3N(x, y, z) {
+        return x + y + z;
+      }
+
+      const sumar3NL = (x, y, z) => x + y + z;
+      console.log(sumar3NL(...num)); // Spread funcion--funcion para sumar los 3 elementos de un arreglo pasando 3 elementos com parametro */
+      /*   var persona = {
+        nombre: "Yo",
+        apellido: "Yo2",
+        gustos: ["carne", "pescado"],
+      };
+      const { nombre: n, apellido: p, gustos: g } = persona; //Desestructurando objetos y asignando variables(y alias ) a sus propiedades
+      console.log(n, p, g); */
+
+      /* const persona = {
+        persona1: {
+          nombre: "Yo1",
+          apellido: "Apellido1",
+          gustos: ["carne1", "pescado1"],
+          edad: 20,
+          edad2: 30,
+        },
+        persona2: {
+          nombre: "Yo2",
+          apellido: "Apellido2",
+          gustos: ["carne2", "pescado2"],
+          edad: 25,
+          edad2: 35,
+        },
+      };
+      const {
+        persona1: { nombre: n, apellido: a, gustos: g },
+        persona2: { nombre: no, apellido: ap, gustos: g2 },
+      } = persona; */
+
+      const crearPersona = (nombre, apellido, gustos, edad) => ({
+        nombre,
+        apellido,
+        gustos,
+        edad,
+      });
+      const personaX = crearPersona("Yoas", "Perez", ["car", "chiken"], 30);
+      console.log();
+      //console.log(n, a, g, no, ap, g2);
+      console.log(personaX.gustos);
+      const edadPromedio = ({ persona1: { edad, edad2 } }) =>
+        (edad + edad2) / 2;
+      //console.log(edadPromedio(persona));
+
+      //const SALUDO = `Hola ${n} ${a} mucho gusto de tenerte por aqui y se que te encanta comer  mucha ${g}.`;
+      //console.log(SALUDO);
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
